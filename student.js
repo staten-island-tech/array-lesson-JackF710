@@ -5,10 +5,10 @@ const students = [
   { name: "Diana", age: 23, grade: 95 },
 ];
 
-students
+const topstudents = students
   .filter((student) => student.grade > 80)
   .forEach((student) => console.log("Top Student", student.name));
 
-students
+const youngstudents = students
   .filter((student) => student.age <= 21)
   .forEach((student) => console.log("Young Student", student.name));
